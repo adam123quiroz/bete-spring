@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: bete-backend
+  datasource:
+    url: jdbc:postgresql://server-bete-ucb.postgres.database.azure.com:5432/database_bete
+    username:
+    password:
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: false
+server:
+  servlet:
+    context-path: /bete/api
+
